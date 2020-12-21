@@ -34,9 +34,9 @@ func listen(R *gin.Engine) {
 		BaseContext:       nil,
 		ConnContext:       nil,
 	}
-
 	err := s.ListenAndServe()
 	if err != nil {
 		fmt.Println("release端口出错了，请检查！" + PORT)
 	}
+
 }
